@@ -1,5 +1,6 @@
 # Twig Humanizer Extension
 
+[![Build Status](https://travis-ci.org/rauwebieten/twig-humanizer-extension.svg?branch=master)](https://travis-ci.org/rauwebieten/twig-humanizer-extension)
 [![Maintainability](https://api.codeclimate.com/v1/badges/5143e3f5b20f57a3084d/maintainability)](https://codeclimate.com/github/rauwebieten/twig-humanizer-extension/maintainability)
 
 A [Twig extension](https://github.com/twigphp/Twig)
