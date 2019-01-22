@@ -2,6 +2,7 @@
 
 namespace examples;
 
+use Coduo\PHPHumanizer\NumberHumanizer;
 use RauweBieten\TwigHumanizerExtension;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;

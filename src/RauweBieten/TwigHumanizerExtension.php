@@ -23,7 +23,6 @@ class TwigHumanizerExtension extends \Twig_Extension
             new \Twig_Filter('humanizer_binary_suffix', [NumberHumanizer::class, 'binarySuffix']),
             new \Twig_Filter('humanizer_precise_binary_suffix', [NumberHumanizer::class, 'preciseBinarySuffix']),
             new \Twig_Filter('humanizer_metric_suffix', [NumberHumanizer::class, 'metricSuffix']),
-            new \Twig_Filter('humanizer_metric_suffix', [NumberHumanizer::class, 'metricSuffix']),
 
             new \Twig_Filter('humanizer_oxford', [CollectionHumanizer::class, 'oxford']),
 

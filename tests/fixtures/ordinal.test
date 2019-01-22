@@ -1,0 +1,10 @@
+--TEST--
+"humanizer_ordinal" filter
+--TEMPLATE--
+{{ 1|humanizer_ordinal }}
+{{ 2|humanizer_ordinal }}
+--DATA--
+return []
+--EXPECT--
+st
+nd

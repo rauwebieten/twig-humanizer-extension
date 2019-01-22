@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_from_roman" filter
+--TEMPLATE--
+{{ 'VI'|humanizer_from_roman }}
+--DATA--
+return []
+--EXPECT--
+6

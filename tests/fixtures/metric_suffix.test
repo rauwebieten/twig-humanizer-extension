@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_metric_suffix" filter
+--TEMPLATE--
+{{ 1240|humanizer_metric_suffix }}
+--DATA--
+return []
+--EXPECT--
+1.2k

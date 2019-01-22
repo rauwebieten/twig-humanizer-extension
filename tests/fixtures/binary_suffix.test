@@ -1,0 +1,8 @@
+--TEST--
+"binary_suffix" filter
+--TEMPLATE--
+{{ 1000|humanizer_binary_suffix }}
+--DATA--
+return []
+--EXPECT--
+1000 bytes

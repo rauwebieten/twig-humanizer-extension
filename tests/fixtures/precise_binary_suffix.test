@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_precise_binary_suffix" filter
+--TEMPLATE--
+{{ 333|humanizer_precise_binary_suffix(2) }}
+--DATA--
+return []
+--EXPECT--
+333 bytes
