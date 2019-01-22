@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_to_roman" filter
+--TEMPLATE--
+{{ 4|humanizer_to_roman }}
+--DATA--
+return []
+--EXPECT--
+IV

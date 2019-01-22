@@ -1,10 +1,10 @@
-<p>
-    {% for i in 1..12 %}
-        {{ i|humanizer_to_roman }}
-    {% endfor %}
-</p>
-<p>
-    {{ 'Lorem ipsum dolorem si amet, lorem ipsum. Dolorem sic et nunc.'|humanizer_truncate(8,'...') }}
-</p>
+--TEST--
+"humanizer_truncate_html" filter
+--TEMPLATE--
 {{ '<p><b>HyperText Markup Language</b>, commonly referred to as <b>HTML</b></p>'|humanizer_truncate_html(3)|raw }}
 {{ '<p><b>HyperText Markup Language</b>, commonly referred to as <b>HTML</b></p>'|humanizer_truncate_html(3,'<b>')|raw }}
+--DATA--
+return []
+--EXPECT--
+HyperText
+<b>HyperText</b>

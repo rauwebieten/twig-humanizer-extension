@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_truncate" filter
+--TEMPLATE--
+{{ 'Lorem ipsum dolorem si amet, lorem ipsum. Dolorem sic et nunc.'|humanizer_truncate(8,'...') }}
+--DATA--
+return []
+--EXPECT--
+Lorem ipsum...
