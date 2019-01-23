@@ -4,6 +4,8 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/5143e3f5b20f57a3084d/maintainability)](https://codeclimate.com/github/rauwebieten/twig-humanizer-extension/maintainability)
 [![codecov](https://codecov.io/gh/rauwebieten/twig-humanizer-extension/branch/master/graph/badge.svg)](https://codecov.io/gh/rauwebieten/twig-humanizer-extension)
 [![StyleCI](https://github.styleci.io/repos/165889067/shield?branch=master)](https://github.styleci.io/repos/165889067)
+![](https://img.shields.io/github/issues/rauwebieten/twig-humanizer-extension.svg)
+![](https://img.shields.io/github/license/rauwebieten/twig-humanizer-extension.svg)
 
 A [Twig extension](https://github.com/twigphp/Twig)
 for the [PHP Humanizer library](https://github.com/coduo/php-humanizer)
