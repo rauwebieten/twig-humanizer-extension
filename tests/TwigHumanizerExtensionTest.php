@@ -6,7 +6,7 @@ class TwigHumanizerExtensionTest extends Twig_Test_IntegrationTestCase
     public function getExtensions()
     {
         return [
-            new \RauweBieten\TwigHumanizerExtension()
+            new \RauweBieten\TwigHumanizerExtension(),
         ];
     }
 
