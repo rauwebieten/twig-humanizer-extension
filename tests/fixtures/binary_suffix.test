@@ -1,8 +1,8 @@
 --TEST--
-"binary_suffix" filter
+"humanizer_binary_suffix" filter
 --TEMPLATE--
-{{ 1000|humanizer_binary_suffix }}
+{{ 1024|humanizer_binary_suffix }}
 --DATA--
 return []
 --EXPECT--
-1000 bytes
+1 kB

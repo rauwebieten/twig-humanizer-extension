@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_difference" filter
+--TEMPLATE--
+{{ date("2014-04-26")|humanizer_difference(date("2014-04-24")) }}
+--DATA--
+return []
+--EXPECT--
+2 days ago

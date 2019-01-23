@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_precise_difference" filter
+--TEMPLATE--
+{{ date("2014-04-26 13:00:00")|humanizer_precise_difference(date("2014-04-25 11:20:00")) }}
+--DATA--
+return []
+--EXPECT--
+1 day, 1 hour, 40 minutes ago

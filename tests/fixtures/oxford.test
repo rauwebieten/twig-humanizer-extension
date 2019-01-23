@@ -1,0 +1,8 @@
+--TEST--
+"humanizer_oxford" filter
+--TEMPLATE--
+{{ ['Michal', 'Norbert', 'Lukasz', 'Pawel']|humanizer_oxford(2) }}
+--DATA--
+return []
+--EXPECT--
+Michal, Norbert, and 2 others
