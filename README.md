@@ -20,6 +20,8 @@ composer require rauwebieten/twig-humanizer-extension
 
 ## Available filters
 
+All filters are underscored, and prefixed:
+
 - humanizer_humanize
 - humanizer_truncate
 - humanizer_truncate_html
@@ -39,8 +41,38 @@ See the [PHP Humanizer documentation](https://github.com/coduo/php-humanizer) fo
 
 ## Example usage
 
-```twig
-{% for i in 1..12 %}
-    {{ i|to_roman }}
-{% endfor %}
+```twig,html
+<p>
+    1 to 12 in roman:
+    {% for i in 1..12 %}
+        {{ i|humanizer_to_roman }}
+    {% endfor %}
+</p>
+<p>
+    Roman VI = {{ 'VI'|humanizer_from_roman }}
+</p>
+<p>
+    1024 bytes = {{ 1024|humanizer_binary_suffix }}<br>
+    1024 bytes = {{ 1024|humanizer_precise_binary_suffix(2) }}
+</p>
+<p>
+    This article was posted
+    {{ date("now")|humanizer_difference(date("2014-04-24")) }}
+</p>
+<p>
+    {{ ['Michal', 'Norbert', 'Lukasz', 'Pawel']|humanizer_oxford(2) }}
+</p>
+<p>
+    1240 metric = {{ 1240|humanizer_metric_suffix }}
+</p>
+<p>
+    first: 1{{ 1|humanizer_ordinal }}<br>
+    first: {{ 1|humanizer_ordinalize }}
+</p>
+<p>
+    {{ 'Lorem ipsum dolorem si amet, lorem ipsum. Dolorem sic et nunc.'|humanizer_truncate(8,'...') }}
+</p>
+{{ '<p><b>HyperText Markup Language</b>, commonly referred to as <b>HTML</b></p>'|humanizer_truncate_html(3)|raw }}
+{{ '<p><b>HyperText Markup Language</b>, commonly referred to as <b>HTML</b></p>'|humanizer_truncate_html(3,'<b>')|raw }}
+
 ```
